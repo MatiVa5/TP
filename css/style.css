@@ -1,0 +1,389 @@
+body { 
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 60px;   
+
+}
+/* header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(210, 29%, 24%, 0.747), hsla(204, 8%, 76%, 0.76));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(210, 29%, 24%, 0.699), hsla(204, 8%, 76%, 0.76)), url(../img/posible\ fondo3.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+
+}
+
+nav > a{
+    color: black;
+    font-weight: 300;  
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{ 
+    text-decoration: underline;
+
+}
+header .textos-header{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: black;
+}
+.textos-header h2{
+    font-size: 30px;
+    color: black;
+    font-weight: 300;
+
+}
+.wave{
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+
+}
+
+/* Productos */
+
+.productos{ 
+    background: #f2f2f2;
+
+}
+
+.galeria-productos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-productos{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-productos >img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}
+
+.hover-productos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(210, 29%, 24%, 0.719);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-productos img{
+    width: 50px;
+
+}
+
+.hover-productos p{
+    color: white;
+}
+
+.imagen-productos:hover .hover-productos{
+    transform: scale(1);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6)
+}
+
+.cards .card >img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: block;
+
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: white;
+    align-items: left;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+    align-items: left;
+
+}
+
+/* Quienes somos */
+
+.about-us{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+
+
+}
+
+
+.descripcion{
+    width: 100%;
+    text-align: center;
+
+}
+
+/* footer */
+
+footer{
+    background: rgba(0, 0, 0, 0.719);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.content-foo{
+    text-align: center;
+
+}
+.content-foo h4{
+    color: white;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom:  10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.logo > img{
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6)
+}
+
+.insta{
+    text-decoration: none;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+.ds{
+    width: 100%;
+    text-align: center;
+}
+.mb-3{
+   margin-top: 100px;
+
+    
+    
+  
+   padding: 50px;
+   
+}
+.form-label{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ubication{
+    align-items: center;
+    text-align: center;
+    background: #f2f2f2;
+
+}
+
+#error{
+    color: red;
+}
+
+.contenedor-contacto{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+
+.texto-contacto{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media only screen and(max-width:900px){
+    header{
+        background-position: center;
+
+    }
+    .logo > img{
+        width: 150px;
+        height: 150px;
+        margin-left: 20px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6)
+    }
+
+    /* Productos */
+
+    .imagen-productos{
+        width: 44%;
+
+    }
+
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+    
+    .cards .card:first-child{
+        margin-bottom: 30px;
+
+    }
+
+}
+    @media screen and (max-width:500px){
+
+    
+        nav{
+            text-align: center;
+            padding: 30px 0 0 0;
+        }
+    
+        nav > a{
+            margin-right: 5px;
+        }
+    
+        .textos-header h1{
+            font-size: 35px;
+        }
+    
+        .textos-header h2{
+            font-size: 20px;
+        }
+    
+        .imagen-productos{
+            width: 95%;
+        }
+    
+        
+    
+        .cards .card{
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .cards .card img{
+            width: 90px;
+            height: 90px;
+        }
+    
+        /* Footer */
+    
+        .contenedor-footer{
+            flex-direction: column;
+            border: none;
+        }
+    
+        .content-foo{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    
+        .content-foo h4{
+            border: none;
+        }
+    
+        .content-foo p{
+            color: #ccc;
+            border-bottom: 1px solid #f2f2f2;
+            padding-bottom: 20px;
+        }
+    
+    }
